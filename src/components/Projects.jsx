@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 function Projects() {
   const data = [
@@ -36,26 +37,27 @@ function Projects() {
   };
 
   return (
-    // <Container>
-    <Carousel
-      fade
-      activeIndex={index}
-      onSelect={handleSelect}
-      style={{ width: '70%', margin: 'auto' }}
-      className='shadow-lg rounded-5'
-    >
-      {data.map((slide, i) => {
-        return (
-          <Carousel.Item interval={3000}>
-            <Link to={`//${slide.deployed}`}>
-              <img
-                style={{ height: 'auto' }}
-                className='d-block w-100 rounded-5'
-                src={slide.image}
-                alt='project screenshot'
-              />
-            </Link>
-            {/* <Carousel.Caption
+    <Container>
+      <h1 style={{ marginLeft: '30px', marginBottom: '30px' }}>Projects</h1>
+      <Carousel
+        fade
+        activeIndex={index}
+        onSelect={handleSelect}
+        style={{ width: '100%', margin: 'auto' }}
+        className='shadow-lg rounded-5'
+      >
+        {data.map((slide, i) => {
+          return (
+            <Carousel.Item interval={3000}>
+              <Link to={`//${slide.deployed}`}>
+                <img
+                  style={{ height: 'auto' }}
+                  className='d-block w-100 rounded-5'
+                  src={slide.image}
+                  alt='project screenshot'
+                />
+              </Link>
+              {/* <Carousel.Caption
                 className='carouselCaption'
                 style={{
                   bottom: '2rem',
@@ -69,11 +71,11 @@ function Projects() {
                 <h2>{slide.github}</h2>
                 <h2>{slide.deployed}</h2>
               </Carousel.Caption> */}
-          </Carousel.Item>
-        );
-      })}
-    </Carousel>
-    // </Container>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+    </Container>
   );
 }
 

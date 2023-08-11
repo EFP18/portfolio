@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import githubLogo from '../components/images/github-mark.png';
 import linkedinLogo from '../components/images/LI-In-Bug.png';
 import instagramLogo from '../components/images/logo-ig-png-32464.png';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {
+//   faInstagram,
+//   faWhatsapp,
+//   faTwitter,
+// } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (

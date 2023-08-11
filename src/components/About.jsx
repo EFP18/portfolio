@@ -6,6 +6,11 @@ import Card from 'react-bootstrap/Card';
 const About = () => {
   return (
     <Container className='mb-5 mt-4'>
+      <h1
+        style={{ marginLeft: '30px', marginBottom: '30px', marginTop: '30px' }}
+      >
+        About
+      </h1>
       <Row>
         <Col xs={12} md={4} lg={3}>
           <Image
