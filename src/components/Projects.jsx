@@ -41,7 +41,7 @@ function Projects() {
       fade
       activeIndex={index}
       onSelect={handleSelect}
-      style={{ width: '60%', margin: 'auto' }}
+      style={{ width: '70%', margin: 'auto' }}
       className='shadow-lg rounded-5'
     >
       {data.map((slide, i) => {
