@@ -1,7 +1,12 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Projects from './components/Projects';
+import About from './components/About';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
+
+import './styles/App.css';
 
 const App = () => {
   return (
@@ -9,17 +14,10 @@ const App = () => {
       {/* anything between the browserrouter tag is react router dom functionality */}
       <HashRouter>
         <Navigation />
-        <Experience />
-        {/* conditionally rendered routes */}
-        <Routes>
-          {/* when on localhost:3000 / route, only display the Home page */}
-          {/* endpoints */}
-          {/* <Route path='/' element={<AboutMe />} /> */}
-          {/* <Route path='/Portfolio' element={<Portfolio />} /> */}
-          {/* <Route path='/Resume' element={<Resume />} /> */}
-          {/* <Route path='/Contact' element={<ContactForm />} /> */}
-        </Routes>
-        {/* <Footer /> */}
+        <About />
+        {/* <Experience/> */}
+        <Projects />
+        <Footer />
       </HashRouter>
     </div>
   );

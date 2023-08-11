@@ -1,66 +1,54 @@
-import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage1 from './images/codetrove.png';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import headshot from './images/headshotPortfolio.png';
 
-function IndividualIntervalsExample() {
-  const data = [
-    {
-      image: require('./images/codetrove.png'),
-      caption: 'Code Trove',
-      description: 'A place to save and share code snippets',
-      technology: 'Handlebars',
-      github: 'link',
-      deployed: 'deployed',
-    },
-    {
-      image: require('./images/marveldex.png'),
-      caption: 'MarvelDex',
-      description: 'A Pokedex for Marvel Characters',
-      technology: 'JavaScript',
-      github: 'link',
-      deployed: 'deployed',
-    },
-    {
-      image: require('./images/appointme.png'),
-      caption: 'Caption',
-      description: 'appointMe',
-      technology: 'React, MERN, GraphQL',
-      github: 'link',
-      deployed: 'deployed',
-    },
-  ];
-
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
+const About = () => {
   return (
-    <Carousel
-      activeIndex={index}
-      onSelect={handleSelect}
-      style={{ width: '50%', margin: 'auto' }}
-    >
-      {data.map((slide, i) => {
-        return (
-          <Carousel.Item>
-            <img
-              className='d-block w-100'
-              src={slide.image}
-              alt='project landing page screenshot'
-            />
-            <Carousel.Caption>
-              <h1>{slide.caption}</h1>
-              <h2>{slide.description}</h2>
-              <h2>{slide.technology}</h2>
-              <h2>{slide.github}</h2>
-              <h2>{slide.deployed}</h2>
-            </Carousel.Caption>
-          </Carousel.Item>
-        );
-      })}
-    </Carousel>
+    <Container>
+      {/* create a row in the page that will have 2 columns, one for the headshot and one for the bio */}
+      <Row>
+        <img
+          src={headshot}
+          className='rounded-circle headshot'
+          alt='headshot'
+          style={{
+            height: '150px',
+            marginLeft: '50px',
+            width: '130px',
+          }}
+        />
+        <Col sm={10}>
+          <div className='mb-3 ml-4 position-fixed'>
+            <div className='card-body'>
+              <h5 className='card-title cardTitle mb-4'>
+                Hey! My name is Ester!
+              </h5>
+              <p className='card-text'>
+                Very methodical and hard working, I enjoy solving puzzles and
+                answering complex questions. I am very passionate about
+                languages and I'm very interested in learning some programming
+                languages as well, to combine them with creativity. I am very
+                eager to learn, well-organized, and I work very well with
+                deadlines.
+              </p>
+              <p className='card-text'>
+                I studied Linguistics at the University of Groningen in the
+                Netherlands. I'm really passionate about studying different
+                languages, and I find the creation of different structures and
+                sentences very interesting, which is why I decided to study
+                programming languages and coding.
+              </p>
+              <p className='card-text'>
+                <small className='text-muted'>
+                  Contact me for more information!!
+                </small>
+              </p>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
-export default IndividualIntervalsExample;
+export default About;
