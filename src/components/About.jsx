@@ -7,28 +7,30 @@ const About = () => {
   return (
     <Container className='mb-5 mt-4'>
       <Row>
-        <Col xs={12} md={3} lg={3}>
+        <Col xs={12} md={4} lg={3}>
           <Image
             src={headshot}
             roundedCircle
             fluid
-            style={{ height: '250px', marginLeft: '20px'}}
+            style={{ height: '250px', marginLeft: '20px', marginTop: '30px' }}
           />
         </Col>
         <Col xs={12} md={8} lg={8}>
-          <Card body className='border-0'>
-            Very methodical and hard working, I enjoy solving puzzles and
-            answering complex questions. I am very passionate about languages
-            and I'm very interested in learning some programming languages as
-            well, to combine them with creativity. I am very eager to learn,
-            well-organized, and I work very well with deadlines.
+          <Card body className='border-0' style={{ fontSize: '1.2rem' }}>
+            Linguist turned coder! I studied Linguistics at the University of
+            Groningen in the Netherlands. I'm really passionate about studying
+            different languages, and I find the creation of different structures
+            and sentences very interesting, which is why I decided to study
+            programming languages and coding. Back in 2019 I created a website
+            using Google Sites. Seeing the final product after all the hard work
+            gave me a sense of fulfillment, so I took the next step towards
+            becoming a Full Stack Web Developer.
           </Card>
-          <Card body className='border-0'>
-            I studied Linguistics at the University of Groningen in the
-            Netherlands. I'm really passionate about studying different
-            languages, and I find the creation of different structures and
-            sentences very interesting, which is why I decided to study
-            programming languages and coding.
+          <Card body className='border-0' style={{ fontSize: '1.2rem' }}>
+            Back in 2019 I created a website using Google Sites. Seeing the
+            final product after all the hard work gave me a sense of
+            fulfillment, so I took the next step towards becoming a Full Stack
+            Web Developer.
           </Card>
         </Col>
       </Row>

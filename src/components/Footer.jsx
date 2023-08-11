@@ -10,7 +10,7 @@ function Footer() {
       style={{
         display: 'flex',
         justifyContent: 'space-around',
-        marginTop: '20px',
+        marginTop: '50px',
       }}
     >
       <ul style={{ listStyleType: 'none' }}>
