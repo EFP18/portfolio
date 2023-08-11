@@ -15,7 +15,7 @@ const App = () => {
       <HashRouter>
         <Navigation />
         <About />
-        {/* <Experience/> */}
+        <Experience />
         <Projects />
         <Footer />
       </HashRouter>
