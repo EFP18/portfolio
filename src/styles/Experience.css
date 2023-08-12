@@ -1,4 +1,46 @@
 .titles {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
+  
+}
+
+.experienceTitle{
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+}
+
+.buttonText {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.resumeBtn {
+  background-image: linear-gradient(
+    45deg,
+    #33c7f0 0%,
+    #4794e6 25%,
+    #9536e2 50%,
+    #763d98 75%,
+    #bc1888 100%
+  );
+}
+
+.resumeBtn:hover {
+  background-color: #f09433;
+
+  /* background-color: aquamarine; */
+  background-image: linear-gradient(
+    45deg,
+    #bc1888 0%,
+    #763d98 25%,
+    #9536e2 50%,
+    #4794e6 75%,
+    #33c7f0 100%
+  );
+}
+
+.resumeBtn:active {
+  background-image: red;
 }

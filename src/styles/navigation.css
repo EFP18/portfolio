@@ -2,3 +2,22 @@
   font-family: 'Dancing Script', cursive;
   font-size: 50px !important;
 }
+
+.navItems {
+  font-family: 'Karla', sans-serif;
+}
+
+.navItems a:hover {
+  color: rgb(149, 149, 208);
+}
+
+.navItems a:active {
+  color: rgb(34, 161, 108);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* height of sticky header */
+
+}
+

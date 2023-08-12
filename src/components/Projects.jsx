@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import '../styles/Projects.css';
 
 function Projects() {
   const data = [
@@ -38,7 +39,13 @@ function Projects() {
 
   return (
     <Container>
-      <h1 style={{ marginLeft: '30px', marginBottom: '30px' }}>Projects</h1>
+      <h1
+      id='projects'
+        className='projectsTitle'
+        style={{ marginLeft: '30px', marginBottom: '30px' }}
+      >
+        Projects
+      </h1>
       <Carousel
         fade
         activeIndex={index}

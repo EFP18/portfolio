@@ -14,7 +14,13 @@ import '../styles/Experience.css';
 const Experience = () => {
   return (
     <Container>
-      <h1 style={{ marginLeft: '30px', marginBottom: '30px' }}>Experience</h1>
+      <h1
+        style={{ marginLeft: '30px', marginBottom: '30px' }}
+        id='experience'
+        className='experienceTitle'
+      >
+        Experience
+      </h1>
       <Row style={{ marginBottom: '50px' }}>
         <Col xs={12} md={6} lg={6}>
           <h1 className='titles' style={{ marginBottom: '30px' }}>
@@ -81,19 +87,19 @@ const Experience = () => {
             </Card.Body>
           </Card>
           <Button
-            style={{ marginTop: '20px', backgroundColor: '#9BC1BC' }}
-            variant='outline-success'
+            className='resumeBtn'
+            // style={{ marginTop: '20px', backgroundColor: '#9BC1BC' }}
           >
             <a
               href={resume}
               target='_blank'
               rel='noreferrer'
-              className='btn'
+              className='buttonText'
               style={{ width: 'auto' }}
             >
               View full resume
             </a>
-          </Button>{' '}
+          </Button>
         </Col>
       </Row>
     </Container>

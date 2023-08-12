@@ -2,11 +2,14 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import headshot from './images/headshotPortfolio.png';
 import Card from 'react-bootstrap/Card';
+import '../styles/About.css';
 
 const About = () => {
   return (
     <Container className='mb-5 mt-4'>
       <h1
+        id='about'
+        className='aboutTitle'
         style={{ marginLeft: '30px', marginBottom: '30px', marginTop: '30px' }}
       >
         About
