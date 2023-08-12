@@ -4,11 +4,9 @@ import githubLogo from '../components/images/github-mark.png';
 import linkedinLogo from '../components/images/LI-In-Bug.png';
 import instagramLogo from '../components/images/logo-ig-png-32464.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {
-//   faInstagram,
-//   faWhatsapp,
-//   faTwitter,
-// } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
+// import '@fortawesome/fontawesome-svg-core/styles.css';
+import emailIcon from '../components/images/icons8-email-32.png';
 
 function Footer() {
   return (
@@ -28,6 +26,12 @@ function Footer() {
               alt='github logo'
               style={{ height: '40px' }}
             />
+          </Link>
+        </li>
+        <li style={{ display: 'inline', marginRight: '20px' }}>
+          {/* using logo images for the footer with link to the respective pages */}
+          <Link href='mailto:ester.p18@hotmail.com'>
+            <img src={emailIcon} alt='email icon' style={{ height: '40px' }} />
           </Link>
         </li>
         <li style={{ display: 'inline', marginRight: '20px' }}>
