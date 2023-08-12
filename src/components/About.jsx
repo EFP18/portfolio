@@ -24,7 +24,7 @@ const About = () => {
           />
         </Col>
         <Col xs={12} md={8} lg={8}>
-          <Card body className='border-0' style={{ fontSize: '1.2rem' }}>
+          <Card body className='border-0 aboutMe' style={{ fontSize: '1.2rem' }}>
             Linguist turned coder! I have always loved studying different
             languages, and I find the creation of different structures and
             sentences very interesting, which is why I decided to study
@@ -32,7 +32,7 @@ const About = () => {
             Linguistics at the University of Groningen in the Netherlands, and
             worked in translations for several years.
           </Card>
-          <Card body className='border-0' style={{ fontSize: '1.2rem' }}>
+          <Card body className='border-0 aboutMe' style={{ fontSize: '1.2rem' }}>
             Back in 2022 I created a website using Google Sites. Seeing the
             final product after all the hard work gave me a sense of
             fulfillment, so I took the next step towards becoming a Full Stack

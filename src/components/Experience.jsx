@@ -72,7 +72,7 @@ const Experience = () => {
             Languages
           </h1>
           <Row>
-            <Col xs={4} >
+            <Col xs={4}>
               <ul className='languages'>
                 <li>English</li>
                 <li>Greek</li>
@@ -96,17 +96,22 @@ const Experience = () => {
         </h1>
         <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
           <Card.Body>
-            <Card.Title>Full Stack Web Development</Card.Title>
-            <Card.Text>Vanderbilt, 2023</Card.Text>
+            <Card.Title className='educationTitle'>
+              Full Stack Web Development
+            </Card.Title>
+            <Card.Text className='educationTimeline'>
+              Vanderbilt, 2023
+            </Card.Text>
           </Card.Body>
         </Card>
-        <Card
-          style={{ marginTop: '20px' }}
-          className='shadow-lg p-3 mb-5 bg-white rounded'
-        >
+        <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
           <Card.Body>
-            <Card.Title>European Languages and Cultures</Card.Title>
-            <Card.Text>University of Groningen, 2017</Card.Text>
+            <Card.Title className='educationTitle'>
+              European Languages and Cultures
+            </Card.Title>
+            <Card.Text className='educationTimeline'>
+              University of Groningen, 2017
+            </Card.Text>
           </Card.Body>
         </Card>
       </Row>

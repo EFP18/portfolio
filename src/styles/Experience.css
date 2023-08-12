@@ -11,43 +11,41 @@
 .buttonText {
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: rgb(221, 209, 209);
   font-weight: 500;
+  font-family: 'Karla', sans-serif;
+
 }
 
 .resumeBtn {
-  background-image: linear-gradient(
-    45deg,
-    #33c7f0 0%,
-    #4794e6 25%,
-    #9536e2 50%,
-    #763d98 75%,
-    #bc1888 100%
-  );
+  margin-bottom: 30px;
+  align-content: center;
+  background-color: rgb(73, 97, 120) !important;
+  
 }
 
 .resumeBtn:hover {
-  background-color: #f09433;
-
-  /* background-color: aquamarine; */
-  background-image: linear-gradient(
-    45deg,
-    #bc1888 0%,
-    #763d98 25%,
-    #9536e2 50%,
-    #4794e6 75%,
-    #33c7f0 100%
-  );
+  background-color: #658ebd !important;
 }
 
 .languages li {
   list-style-type: none;
   font-size: 25px;
-    font-family: 'Karla', sans-serif;
-
+  font-family: 'Karla', sans-serif;
 }
 
 .languages li:hover {
   color: rgb(149, 149, 208);
   font-weight: bolder;
+}
+
+.educationTitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 30px !important;
+  font-weight: bolder !important;
+}
+
+.educationTimeline {
+  font-family: 'Karla', sans-serif;
+  font-size: 25px !important;
 }
