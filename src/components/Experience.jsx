@@ -69,39 +69,61 @@ const Experience = () => {
         </Col>
         <Col xs={12} md={6} lg={6}>
           <h1 className='titles' style={{ marginBottom: '30px' }}>
-            Education
+            Languages
           </h1>
-          <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
-            <Card.Body>
-              <Card.Title>Full Stack Web Development</Card.Title>
-              <Card.Text>Vanderbilt, 2023</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card
-            style={{ marginTop: '20px' }}
-            className='shadow-lg p-3 mb-5 bg-white rounded'
-          >
-            <Card.Body>
-              <Card.Title>European Languages and Cultures</Card.Title>
-              <Card.Text>University of Groningen, 2017</Card.Text>
-            </Card.Body>
-          </Card>
-          <Button
-            className='resumeBtn'
-            // style={{ marginTop: '20px', backgroundColor: '#9BC1BC' }}
-          >
-            <a
-              href={resume}
-              target='_blank'
-              rel='noreferrer'
-              className='buttonText'
-              style={{ width: 'auto' }}
-            >
-              View full resume
-            </a>
-          </Button>
+          <Row>
+            <Col xs={4} >
+              <ul className='languages'>
+                <li>English</li>
+                <li>Greek</li>
+                <li>Spanish</li>
+                <li>Hebrew</li>
+              </ul>
+            </Col>
+            <Col>
+              <ul className='languages'>
+                <li>Italian</li>
+                <li>French</li>
+                <li>Dutch</li>
+              </ul>
+            </Col>
+          </Row>
         </Col>
       </Row>
+      <Row>
+        <h1 className='titles' style={{ marginBottom: '30px' }}>
+          Education
+        </h1>
+        <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
+          <Card.Body>
+            <Card.Title>Full Stack Web Development</Card.Title>
+            <Card.Text>Vanderbilt, 2023</Card.Text>
+          </Card.Body>
+        </Card>
+        <Card
+          style={{ marginTop: '20px' }}
+          className='shadow-lg p-3 mb-5 bg-white rounded'
+        >
+          <Card.Body>
+            <Card.Title>European Languages and Cultures</Card.Title>
+            <Card.Text>University of Groningen, 2017</Card.Text>
+          </Card.Body>
+        </Card>
+      </Row>
+      <Button
+        className='resumeBtn'
+        // style={{ marginTop: '20px', backgroundColor: '#9BC1BC' }}
+      >
+        <a
+          href={resume}
+          target='_blank'
+          rel='noreferrer'
+          className='buttonText'
+          style={{ width: 'auto' }}
+        >
+          View full resume
+        </a>
+      </Button>
     </Container>
   );
 };
