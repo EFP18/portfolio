@@ -18,8 +18,12 @@
 
 .resumeBtn {
   margin-bottom: 30px;
-  align-content: center;
   background-color: rgb(73, 97, 120) !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  /* width: fit-content !important; */
 }
 
 .resumeBtn:hover {

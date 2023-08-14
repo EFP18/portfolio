@@ -1,3 +1,10 @@
+@media screen and (max-width: 500px) {
+  .indIcons {
+    height: 25px !important;
+    width: 25px !important;
+  }
+}
+
 /* * {
   margin: 0;
   padding: 0;

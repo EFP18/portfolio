@@ -10,6 +10,7 @@ import htmlIcon from './images/icons8-html-96.png';
 import mongoIcon from './images/icons8-mongodb-96.png';
 import resume from './images/resume.pdf';
 import '../styles/Experience.css';
+import { Link } from 'react-router-dom';
 
 const Experience = () => {
   return (
@@ -111,7 +112,7 @@ const Experience = () => {
         >
           Education
         </h1>
-        <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
+        <Card className='shadow-lg p-3 mb-4 bg-white rounded'>
           <Card.Body>
             <Card.Title className='educationTitle'>
               Full Stack Web Development
@@ -132,20 +133,19 @@ const Experience = () => {
           </Card.Body>
         </Card>
       </Row>
-      <Button
-        className='resumeBtn'
-        // style={{ marginTop: '20px', backgroundColor: '#9BC1BC' }}
-      >
-        <a
-          href={resume}
-          target='_blank'
-          rel='noreferrer'
-          className='buttonText'
-          style={{ width: 'auto' }}
-        >
-          View full resume
-        </a>
-      </Button>
+      <Row>
+        <Button className='resumeBtn'>
+          <Link
+            href={resume}
+            target='_blank'
+            rel='noreferrer'
+            className='buttonText'
+            style={{ width: 'auto' }}
+          >
+            View full resume
+          </Link>
+        </Button>
+      </Row>
     </Container>
   );
 };
