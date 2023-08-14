@@ -1,9 +1,18 @@
 .aboutTitle {
   font-family: 'Karla', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .aboutMe {
   font-family: 'Karla', sans-serif;
   font-size: 22px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutTitle {
+    font-size: 35px;
+  }
+  .aboutMe {
+    font-size: 19px !important;
+  }
 }

@@ -26,45 +26,59 @@ const Experience = () => {
           <h1 className='titles' style={{ marginBottom: '30px' }}>
             Skills
           </h1>
-          <div style={{ marginLeft: 'auto' }}>
+          <div className='icons'>
+            {/* <div style={{ marginLeft: 'auto' }}> */}
             <img
               src={mysqlIcon}
               alt='mysqlIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={javascriptIcon}
               alt='javascriptIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={nodeIcon}
               alt='nodeIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={reactIcon}
               alt='reactIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
-          </div>
-          <div style={{ marginLeft: 'auto' }}>
-            <img src={cssIcon} alt='cssIcon' style={{ marginRight: '30px' }} />
+            {/* </div> */}
+            {/* <div style={{ marginLeft: 'auto' }}> */}
+            <img
+              src={cssIcon}
+              className='indIcons'
+              alt='cssIcon'
+              style={{ marginRight: '30px' }}
+            />
             <img
               src={handlebarIcon}
               alt='handlebarIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={htmlIcon}
               alt='htmlIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={mongoIcon}
               alt='mongoIcon'
+              className='indIcons'
               style={{ marginRight: '30px' }}
             />
+            {/* </div> */}
           </div>
         </Col>
         <Col xs={12} md={6} lg={6}>
@@ -91,7 +105,10 @@ const Experience = () => {
         </Col>
       </Row>
       <Row>
-        <h1 className='titles' style={{ marginBottom: '30px' }}>
+        <h1
+          className='titles educationSection'
+          style={{ marginBottom: '30px' }}
+        >
           Education
         </h1>
         <Card className='shadow-lg p-3 mb-5 bg-white rounded'>

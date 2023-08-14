@@ -1,11 +1,11 @@
 .titles {
   font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .experienceTitle {
   font-family: 'Karla', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .buttonText {
@@ -14,14 +14,12 @@
   color: rgb(221, 209, 209);
   font-weight: 500;
   font-family: 'Karla', sans-serif;
-
 }
 
 .resumeBtn {
   margin-bottom: 30px;
   align-content: center;
   background-color: rgb(73, 97, 120) !important;
-  
 }
 
 .resumeBtn:hover {
@@ -48,4 +46,46 @@
 .educationTimeline {
   font-family: 'Karla', sans-serif;
   font-size: 25px !important;
+}
+
+@media screen and (max-width: 764px) {
+  .experienceTitle {
+    font-size: 35px;
+  }
+  .titles {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+  .languages li {
+    font-size: 19px !important;
+  }
+  .educationSection {
+    margin-top: -45px !important;
+  }
+  .educationTitle {
+    font-size: 22px !important;
+  }
+  .educationTimeline {
+    font-size: 20px !important;
+  }
+  .indIcons {
+    height: 60px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .educationTitle {
+    font-size: 18px !important;
+  }
+  .educationTimeline {
+    font-size: 16px !important;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
