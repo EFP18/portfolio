@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EFP18/Portfolio/static/css/main.18cee636.css",
-    "main.js": "/EFP18/Portfolio/static/js/main.f2bba4f3.js",
+    "main.css": "/EFP18/Portfolio/static/css/main.016665d9.css",
+    "main.js": "/EFP18/Portfolio/static/js/main.be47ca33.js",
     "static/media/headshotPortfolio.png": "/EFP18/Portfolio/static/media/headshotPortfolio.72c0f4c475756496a444.png",
     "static/media/marveldex.png": "/EFP18/Portfolio/static/media/marveldex.21f72af0e3ca4c90e7ce.png",
     "static/media/codetrove.png": "/EFP18/Portfolio/static/media/codetrove.f817f71edbb523d7fb1d.png",
@@ -9,11 +9,11 @@
     "static/media/logo-ig-png-32464.png": "/EFP18/Portfolio/static/media/logo-ig-png-32464.046af6041ae1fffdc4a7.png",
     "static/media/appointme.png": "/EFP18/Portfolio/static/media/appointme.66ea4dc08a23f5d94fab.png",
     "index.html": "/EFP18/Portfolio/index.html",
-    "main.18cee636.css.map": "/EFP18/Portfolio/static/css/main.18cee636.css.map",
-    "main.f2bba4f3.js.map": "/EFP18/Portfolio/static/js/main.f2bba4f3.js.map"
+    "main.016665d9.css.map": "/EFP18/Portfolio/static/css/main.016665d9.css.map",
+    "main.be47ca33.js.map": "/EFP18/Portfolio/static/js/main.be47ca33.js.map"
   },
   "entrypoints": [
-    "static/css/main.18cee636.css",
-    "static/js/main.f2bba4f3.js"
+    "static/css/main.016665d9.css",
+    "static/js/main.be47ca33.js"
   ]
 }
