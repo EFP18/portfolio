@@ -1,5 +1,5 @@
 .titles {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive !important;
   font-size: 40px;
 }
 
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border-radius: 12px !important;
   align-content: space-around;
   /* width: fit-content !important; */
 }
@@ -34,11 +35,6 @@
   list-style-type: none;
   font-size: 25px;
   font-family: 'Karla', sans-serif;
-}
-
-.languages li:hover {
-  color: rgb(149, 149, 208);
-  font-weight: bolder;
 }
 
 .educationTitle {

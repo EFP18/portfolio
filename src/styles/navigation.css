@@ -9,6 +9,7 @@
 
 .navItems a:hover {
   color: rgb(149, 149, 208);
+  font-weight: bolder;
 }
 
 .navItems a:active {

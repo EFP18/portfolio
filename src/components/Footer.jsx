@@ -5,7 +5,6 @@ import {
   faSquareGithub,
   faSquareInstagram,
   faLinkedin,
-  faHtml5,
 } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Footer.css';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +28,6 @@ function Footer() {
               style={{ height: '50px' }}
               icon={faEnvelope}
             />
-            <FontAwesomeIcon icon={faHtml5} flip style={{ color: '#e07924' }} />
           </Link>
         </li>
         <li style={{ display: 'inline', marginRight: '20px' }}>

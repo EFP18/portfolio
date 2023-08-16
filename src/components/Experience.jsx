@@ -23,9 +23,9 @@ const Experience = () => {
       </h1>
       <Row style={{ marginBottom: '50px' }}>
         <Col xs={12} md={6} lg={6}>
-          <h1 className='titles' style={{ marginBottom: '30px' }}>
+          <h2 className='titles' style={{ marginBottom: '30px' }}>
             Skills
-          </h1>
+          </h2>
           <div className='icons'>
             {/* <div style={{ marginLeft: 'auto' }}> */}
             <img
@@ -82,9 +82,9 @@ const Experience = () => {
           </div>
         </Col>
         <Col xs={12} md={6} lg={6}>
-          <h1 className='titles' style={{ marginBottom: '30px' }}>
+          <h2 className='titles' style={{ marginBottom: '30px' }}>
             Languages
-          </h1>
+          </h2>
           <Row>
             <Col xs={4}>
               <ul className='languages'>
@@ -105,13 +105,13 @@ const Experience = () => {
         </Col>
       </Row>
       <Row>
-        <h1
+        <h2
           className='titles educationSection'
           style={{ marginBottom: '30px' }}
         >
           Education
-        </h1>
-        <Card className='shadow-lg p-3 mb-4 bg-white rounded'>
+        </h2>
+        <Card className='shadow-lg p-3 mb-4 bg-white rounded-5'>
           <Card.Body>
             <Card.Title className='educationTitle'>
               Full Stack Web Development
@@ -121,7 +121,7 @@ const Experience = () => {
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card className='shadow-lg p-3 mb-5 bg-white rounded'>
+        <Card className='shadow-lg p-3 mb-5 bg-white rounded-5'>
           <Card.Body>
             <Card.Title className='educationTitle'>
               European Languages and Cultures
