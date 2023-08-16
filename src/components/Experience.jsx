@@ -31,51 +31,51 @@ const Experience = () => {
             <img
               src={mysqlIcon}
               alt='mysqlIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={javascriptIcon}
               alt='javascriptIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={nodeIcon}
               alt='nodeIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={reactIcon}
               alt='reactIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             {/* </div> */}
             {/* <div style={{ marginLeft: 'auto' }}> */}
             <img
               src={cssIcon}
-              className='indIcons'
+              className='indivIcons'
               alt='cssIcon'
               style={{ marginRight: '30px' }}
             />
             <img
               src={handlebarIcon}
               alt='handlebarIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={htmlIcon}
               alt='htmlIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             <img
               src={mongoIcon}
               alt='mongoIcon'
-              className='indIcons'
+              className='indivIcons'
               style={{ marginRight: '30px' }}
             />
             {/* </div> */}

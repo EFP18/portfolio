@@ -20,7 +20,8 @@ const About = () => {
             src={headshot}
             roundedCircle
             fluid
-            style={{ height: '250px', marginLeft: '20px', marginTop: '30px' }}
+            className='headshot'
+            style={{ height: '250px', marginLeft: '20px', marginTop: '20px' }}
           />
         </Col>
         <Col xs={12} md={8} lg={8}>
