@@ -5,37 +5,25 @@
   }
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #000;
-}
 
-ul {
+.ulFooter {
   position: relative;
   display: flex;
 }
-ul li {
+.ulFooter li {
   position: relative;
   list-style: none;
   margin: 0 20px;
   cursor: pointer;
 }
-ul li a {
+/* .ulFooter li a {
   text-decoration: none;
-}
-ul li a .fa-brands {
+} */
+/* ul li a .indIcons {
   font-size: 6em;
   color: #222;
-}
-ul li a::before {
+} */
+/* ul li a::before {
   font-family: 'FontAwesome';
   position: absolute;
   top: 0;
@@ -43,11 +31,42 @@ ul li a::before {
   font-size: 6em;
   height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in-out;
+  transition: 0.9s ease-in-out;
+} */
+
+/* email icon */
+/* ul li:nth-child(1) a::before {
+  content: '\f0e0';
+  color: #28a8ea;
+  border-bottom: 4px solid #28a8ea;
+} */
+.mailIcon:hover {
+  color: #28a8ea;
 }
 
-ul li:nth-child(1) a::before {
-  content: '\f16d';
+/* github Icon */
+/* ul li:nth-child(2) a::before {
+  content: '\f092';
+  color: black;
+  border-bottom: 4px solid black;
+} */
+.githubIcon:hover {
+  color: rgb(65, 63, 63);
+}
+
+/* linkedin icon */
+/* ul li:nth-child(3) a::before {
+  content: '\f08c';
+  color: #0077b5;
+  border-bottom: 4px solid #1da1f2;
+} */
+.linkedinIcon:hover {
+  color: #0077b5;
+}
+
+/* instagram icon */
+/* ul li:nth-child(4) a::before {
+  content: '\e055';
   background-image: linear-gradient(
     45deg,
     #f09433 0%,
@@ -59,17 +78,18 @@ ul li:nth-child(1) a::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 4px solid #dc2743;
+  color: #dc2743;
+} */
+.instagramIcon:hover {
+  color: #dc2743;
 }
-ul li:nth-child(2) a::before {
-  content: '\f232';
-  color: #25d366;
-  border-bottom: 4px solid #25d366;
-}
-ul li:nth-child(3) a::before {
-  content: '\f099';
-  color: #1da1f2;
-  border-bottom: 4px solid #1da1f2;
-}
-ul li:hover a::before {
+
+/* ul li:hover a::before {
   height: 100%;
 } */
+
+.indIcons {
+  font-size: 2em;
+  color: #202020; /* Default color */
+  transition: color 0.4s ease-in-out;
+}

@@ -10,7 +10,6 @@ import htmlIcon from './images/icons8-html-96.png';
 import mongoIcon from './images/icons8-mongodb-96.png';
 import resume from './images/resume.pdf';
 import '../styles/Experience.css';
-import { Link } from 'react-router-dom';
 
 const Experience = () => {
   return (
@@ -135,7 +134,7 @@ const Experience = () => {
       </Row>
       <Row>
         <Button className='resumeBtn'>
-          <Link
+          <a
             href={resume}
             target='_blank'
             rel='noreferrer'
@@ -143,7 +142,7 @@ const Experience = () => {
             style={{ width: 'auto' }}
           >
             View full resume
-          </Link>
+          </a>
         </Button>
       </Row>
     </Container>

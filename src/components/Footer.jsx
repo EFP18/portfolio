@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import githubLogo from '../components/images/github-mark.png';
-import linkedinLogo from '../components/images/LI-In-Bug.png';
-import instagramLogo from '../components/images/logo-ig-png-32464.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
-// import '@fortawesome/fontawesome-svg-core/styles.css';
-import emailIcon from '../components/images/icons8-email-32.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSquareGithub,
+  faSquareInstagram,
+  faLinkedin,
+  faHtml5,
+} from '@fortawesome/free-brands-svg-icons';
 import '../styles/Footer.css';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
@@ -16,48 +17,46 @@ function Footer() {
         display: 'flex',
         justifyContent: 'space-around',
         marginTop: '50px',
+        marginBottom: '20px',
       }}
     >
-      <ul style={{ listStyleType: 'none' }}>
+      <ul style={{ listStyleType: 'none' }} className='ulFooter'>
         <li style={{ display: 'inline', marginRight: '20px' }}>
           {/* using logo images for the footer with link to the respective pages */}
-          <Link to='https://github.com/EFP18'>
-            <img
-              className='indIcons'
-              src={githubLogo}
-              alt='github logo'
-              style={{ height: '40px' }}
+          <Link href='mailto:ester.p18@hotmail.com'>
+            <FontAwesomeIcon
+              className='indIcons mailIcon'
+              style={{ height: '50px' }}
+              icon={faEnvelope}
             />
+            <FontAwesomeIcon icon={faHtml5} flip style={{ color: '#e07924' }} />
           </Link>
         </li>
         <li style={{ display: 'inline', marginRight: '20px' }}>
           {/* using logo images for the footer with link to the respective pages */}
-          <Link href='mailto:ester.p18@hotmail.com'>
-            <img
-              className='indIcons'
-              src={emailIcon}
-              alt='email icon'
-              style={{ height: '40px' }}
+          <Link to='https://github.com/EFP18'>
+            <FontAwesomeIcon
+              className='indIcons githubIcon'
+              style={{ height: '50px' }}
+              icon={faSquareGithub}
             />
           </Link>
         </li>
         <li style={{ display: 'inline', marginRight: '20px' }}>
           <Link to='https://www.linkedin.com/in/ester-pelosof-242603228/'>
-            <img
-              className='indIcons'
-              src={linkedinLogo}
-              alt='linkedin logo'
-              style={{ height: '40px' }}
+            <FontAwesomeIcon
+              className='indIcons linkedinIcon'
+              icon={faLinkedin}
+              style={{ height: '50px' }}
             />
           </Link>
         </li>
         <li style={{ display: 'inline' }}>
           <Link to='https://www.instagram.com/ester_pelosof/'>
-            <img
-              className='indIcons'
-              src={instagramLogo}
-              alt='instagram logo'
-              style={{ height: '40px' }}
+            <FontAwesomeIcon
+              className='indIcons instagramIcon'
+              icon={faSquareInstagram}
+              style={{ height: '50px' }}
             />
           </Link>
         </li>
