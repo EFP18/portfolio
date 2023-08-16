@@ -40,7 +40,7 @@ function Projects() {
   return (
     <Container>
       <h1
-      id='projects'
+        id='projects'
         className='projectsTitle'
         style={{ marginLeft: '30px', marginBottom: '30px' }}
       >
@@ -55,7 +55,7 @@ function Projects() {
       >
         {data.map((slide, i) => {
           return (
-            <Carousel.Item interval={3000}>
+            <Carousel.Item key={slide.image} interval={3000}>
               <Link to={`//${slide.deployed}`}>
                 <img
                   style={{ height: 'auto' }}
@@ -64,20 +64,6 @@ function Projects() {
                   alt='project screenshot'
                 />
               </Link>
-              {/* <Carousel.Caption
-                className='carouselCaption'
-                style={{
-                  bottom: '2rem',
-                  margin: '0 2rem',
-                  color: 'purple',
-                }}
-              >
-                <h1>{slide.caption}</h1>
-                <h2>{slide.description}</h2>
-                <h2>{slide.technology}</h2>
-                <h2>{slide.github}</h2>
-                <h2>{slide.deployed}</h2>
-              </Carousel.Caption> */}
             </Carousel.Item>
           );
         })}

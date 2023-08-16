@@ -5,7 +5,6 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
-
 import './styles/App.css';
 
 const App = () => {
