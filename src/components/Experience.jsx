@@ -51,16 +51,16 @@ const Experience = () => {
             Languages
           </h2>
           <Row>
-            <Col xs={6}>
-              <ul className='languages '>
+            <Col className='languages'>
+              <ul>
                 <li>English</li>
                 <li>Greek</li>
                 <li>Spanish</li>
                 <li>Hebrew</li>
               </ul>
             </Col>
-            <Col xs={6}>
-              <ul className='languages'>
+            <Col className='languages'>
+              <ul>
                 <li>Italian</li>
                 <li>French</li>
                 <li>Dutch</li>

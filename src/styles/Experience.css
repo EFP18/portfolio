@@ -37,13 +37,18 @@ h2 {
   background-color: #658ebd !important;
 }
 
+.languages {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .languages li {
   list-style-type: none;
   font-size: 20px;
   font-family: 'Karla', sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: space-around;
 }
 
 .educationTitle {

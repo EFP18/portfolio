@@ -26,16 +26,16 @@ html {
 /* responsiveness for navbar */
 @media screen and (max-width: 991px) {
   html {
-    scroll-padding-top: 300px;
+    scroll-padding-top: 270px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .name {
     font-size: 35px !important;
   }
   html {
-    scroll-padding-top: 250px;
+    scroll-padding-top: 240px !important;
   }
   .navItems {
     font-size: 20px !important;
