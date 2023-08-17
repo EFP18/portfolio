@@ -15,7 +15,7 @@ const Experience = () => {
   return (
     <Container>
       <h1
-        style={{ marginLeft: '30px', marginBottom: '30px' }}
+        style={{ marginLeft: '30px', marginBottom: '25px', marginTop: '-20px' }}
         id='experience'
         className='experienceTitle'
       >
@@ -27,57 +27,22 @@ const Experience = () => {
             Skills
           </h2>
           <div className='icons'>
-            {/* <div style={{ marginLeft: 'auto' }}> */}
-            <img
-              src={mysqlIcon}
-              alt='mysqlIcon'
-              className='indivIcons'
-              style={{ marginRight: '30px' }}
-            />
+            <img src={mysqlIcon} alt='mysqlIcon' className='indivIcons' />
             <img
               src={javascriptIcon}
               alt='javascriptIcon'
               className='indivIcons'
-              style={{ marginRight: '30px' }}
             />
-            <img
-              src={nodeIcon}
-              alt='nodeIcon'
-              className='indivIcons'
-              style={{ marginRight: '30px' }}
-            />
-            <img
-              src={reactIcon}
-              alt='reactIcon'
-              className='indivIcons'
-              style={{ marginRight: '30px' }}
-            />
-            {/* </div> */}
-            {/* <div style={{ marginLeft: 'auto' }}> */}
-            <img
-              src={cssIcon}
-              className='indivIcons'
-              alt='cssIcon'
-              style={{ marginRight: '30px' }}
-            />
+            <img src={nodeIcon} alt='nodeIcon' className='indivIcons' />
+            <img src={reactIcon} alt='reactIcon' className='indivIcons' />
+            <img src={cssIcon} className='indivIcons' alt='cssIcon' />
             <img
               src={handlebarIcon}
               alt='handlebarIcon'
               className='indivIcons'
-              style={{ marginRight: '30px' }}
             />
-            <img
-              src={htmlIcon}
-              alt='htmlIcon'
-              className='indivIcons'
-              style={{ marginRight: '30px' }}
-            />
-            <img
-              src={mongoIcon}
-              alt='mongoIcon'
-              className='indivIcons'
-              style={{ marginRight: '30px' }}
-            />
+            <img src={htmlIcon} alt='htmlIcon' className='indivIcons' />
+            <img src={mongoIcon} alt='mongoIcon' className='indivIcons' />
             {/* </div> */}
           </div>
         </Col>
@@ -86,15 +51,15 @@ const Experience = () => {
             Languages
           </h2>
           <Row>
-            <Col xs={4}>
-              <ul className='languages'>
+            <Col xs={6}>
+              <ul className='languages '>
                 <li>English</li>
                 <li>Greek</li>
                 <li>Spanish</li>
                 <li>Hebrew</li>
               </ul>
             </Col>
-            <Col>
+            <Col xs={6}>
               <ul className='languages'>
                 <li>Italian</li>
                 <li>French</li>

@@ -1,23 +1,26 @@
 .aboutTitle {
   font-family: 'Karla', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .aboutMe {
   font-family: 'Karla', sans-serif;
-  font-size: 22px !important;
+  font-size: 20px !important;
 }
 
+.headshot {
+  margin-left: 20px;
+}
 @media screen and (max-width: 767px) {
   .aboutTitle {
-    font-size: 35px;
+    font-size: 25px;
   }
   .aboutMe {
-    font-size: 19px !important;
+    font-size: 18px !important;
   }
   .headshot {
     height: 150px !important;
     margin-top: 0px !important;
-    margin-left: 100px !important;
+    margin-left: 0px !important;
   }
 }

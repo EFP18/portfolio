@@ -1,11 +1,17 @@
 .titles {
   font-family: 'Dancing Script', cursive !important;
-  font-size: 40px;
+  font-size: 30px;
+  margin: auto;
 }
 
 .experienceTitle {
   font-family: 'Karla', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .buttonText {
@@ -33,31 +39,40 @@
 
 .languages li {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .educationTitle {
   font-family: 'Karla', sans-serif;
-  font-size: 30px !important;
+  font-size: 25px !important;
   font-weight: bolder !important;
 }
 
 .educationTimeline {
   font-family: 'Karla', sans-serif;
-  font-size: 25px !important;
+  font-size: 20px !important;
 }
 
-@media screen and (max-width: 764px) {
+.indivIcons {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
   .experienceTitle {
-    font-size: 35px;
+    font-size: 25px;
+    margin-top: -30px !important;
+    margin-bottom: 10px !important;
   }
   .titles {
-    font-size: 30px !important;
-    margin-top: 20px;
+    font-size: 25px !important;
+    margin-top: 17px;
   }
   .languages li {
-    font-size: 19px !important;
+    font-size: 15px !important;
   }
   .educationSection {
     margin-top: -45px !important;
@@ -71,10 +86,12 @@
   .indivIcons {
     height: 60px;
     width: 50px;
+    margin-right: 30px;
+    margin-bottom: 3px;
   }
 }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 414px) {
   .educationTitle {
     font-size: 18px !important;
   }
@@ -87,7 +104,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* icons animation */

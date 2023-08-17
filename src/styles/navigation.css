@@ -1,10 +1,11 @@
 .name {
   font-family: 'Dancing Script', cursive;
-  font-size: 50px !important;
+  font-size: 45px !important;
 }
 
 .navItems {
   font-family: 'Karla', sans-serif;
+  font-size: 25px;
 }
 
 .navItems a:hover {
@@ -13,7 +14,8 @@
 }
 
 .navItems a:active {
-  color: rgb(34, 161, 108);
+  color: rgb(149, 149, 208);
+  font-weight: bolder;
 }
 
 html {
@@ -28,17 +30,14 @@ html {
   }
 }
 
-@media screen and (max-width: 991px) {
-  html {
-    scroll-padding-top: 300px;
-  }
-}
-
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 414px) {
   .name {
-    font-size: 40px !important;
+    font-size: 35px !important;
   }
   html {
-    scroll-padding-top: 300px;
+    scroll-padding-top: 250px;
+  }
+  .navItems {
+    font-size: 20px !important;
   }
 }

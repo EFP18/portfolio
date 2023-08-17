@@ -25,7 +25,7 @@ const Navigation = () => {
           onClick={() => setIsOpen(!isOpen)}
         />
         <Navbar.Collapse id='basic-navbar-nav' style={{ flexGrow: '0' }}>
-          <Nav className='me-auto navItems' style={{ fontSize: '30px' }}>
+          <Nav className='me-auto navItems'>
             <Nav.Link href='#about' onClick={handleNavClickToggle}>
               About
             </Nav.Link>
