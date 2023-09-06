@@ -1,0 +1,13 @@
+.workExpTitle {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+}
+
+.cardDendro:hover {
+  box-shadow: 10px 5px 5px rgb(197, 197, 197);
+}
+
+.card-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
