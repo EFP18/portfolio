@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import '../styles/About.css';
 
 const About = () => {
+
+  
   return (
     <Container className='mb-5 mt-4'>
       <h1
@@ -24,6 +26,7 @@ const About = () => {
             style={{ height: '220px', marginTop: '20px' }}
           />
         </Col>
+
         <Col xs={12} md={8} lg={8}>
           <Card
             body

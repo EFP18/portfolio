@@ -10,6 +10,8 @@ import htmlIcon from './images/icons8-html-96.png';
 import mongoIcon from './images/icons8-mongodb-96.png';
 import resume from './images/resume.pdf';
 import '../styles/Experience.css';
+import { Zoom } from 'react-awesome-reveal';
+import { Bounce } from 'react-awesome-reveal';
 
 const Experience = () => {
   return (
@@ -27,22 +29,39 @@ const Experience = () => {
             Skills
           </h2>
           <div className='icons'>
-            <img src={mysqlIcon} alt='mysqlIcon' className='indivIcons' />
-            <img
-              src={javascriptIcon}
-              alt='javascriptIcon'
-              className='indivIcons'
-            />
-            <img src={nodeIcon} alt='nodeIcon' className='indivIcons' />
-            <img src={reactIcon} alt='reactIcon' className='indivIcons' />
-            <img src={cssIcon} className='indivIcons' alt='cssIcon' />
-            <img
-              src={handlebarIcon}
-              alt='handlebarIcon'
-              className='indivIcons'
-            />
-            <img src={htmlIcon} alt='htmlIcon' className='indivIcons' />
-            <img src={mongoIcon} alt='mongoIcon' className='indivIcons' />
+            <Bounce>
+              <img src={mysqlIcon} alt='mysqlIcon' className='indivIcons' />
+            </Bounce>
+            <Bounce>
+              <img
+                src={javascriptIcon}
+                alt='javascriptIcon'
+                className='indivIcons'
+              />{' '}
+            </Bounce>
+            <Bounce>
+              <img src={nodeIcon} alt='nodeIcon' className='indivIcons' />
+            </Bounce>
+
+            <Bounce>
+              <img src={reactIcon} alt='reactIcon' className='indivIcons' />
+            </Bounce>
+            <Bounce>
+              <img src={cssIcon} className='indivIcons' alt='cssIcon' />
+            </Bounce>
+            <Bounce>
+              <img
+                src={handlebarIcon}
+                alt='handlebarIcon'
+                className='indivIcons'
+              />
+            </Bounce>
+            <Bounce>
+              <img src={htmlIcon} alt='htmlIcon' className='indivIcons' />
+            </Bounce>
+            <Bounce>
+              <img src={mongoIcon} alt='mongoIcon' className='indivIcons' />
+            </Bounce>
             {/* </div> */}
           </div>
         </Col>
@@ -76,26 +95,30 @@ const Experience = () => {
         >
           Education
         </h2>
-        <Card className='shadow-lg p-3 mb-4 bg-white rounded-5'>
-          <Card.Body>
-            <Card.Title className='educationTitle'>
-              Full Stack Web Development
-            </Card.Title>
-            <Card.Text className='educationTimeline'>
-              Vanderbilt, 2023
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='shadow-lg p-3 mb-5 bg-white rounded-5'>
-          <Card.Body>
-            <Card.Title className='educationTitle'>
-              European Languages and Cultures
-            </Card.Title>
-            <Card.Text className='educationTimeline'>
-              University of Groningen, 2017
-            </Card.Text>
-          </Card.Body>
-        </Card>
+        <Zoom triggerOnce>
+          <Card className='shadow-lg p-3 mb-4 bg-white rounded-5'>
+            <Card.Body>
+              <Card.Title className='educationTitle'>
+                Full Stack Web Development
+              </Card.Title>
+              <Card.Text className='educationTimeline'>
+                Vanderbilt, 2023
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Zoom>
+        <Zoom triggerOnce>
+          <Card className='shadow-lg p-3 mb-5 bg-white rounded-5'>
+            <Card.Body>
+              <Card.Title className='educationTitle'>
+                European Languages and Cultures
+              </Card.Title>
+              <Card.Text className='educationTimeline'>
+                University of Groningen, 2017
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Zoom>
       </Row>
       <Row>
         <Button className='resumeBtn'>

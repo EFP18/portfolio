@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 import './styles/App.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <About />
         <Experience />
         <Projects />
+        <Contact />
         <Footer />
       </HashRouter>
     </div>

@@ -3,6 +3,7 @@ import '../styles/Navigation.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { DarkModeToggle } from './DarkMode';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,8 +36,12 @@ const Navigation = () => {
             <Nav.Link href='#projects' onClick={handleNavClickToggle}>
               Projects
             </Nav.Link>
+            <Nav.Link href='#cactont' onClick={handleNavClickToggle}>
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        {/* <DarkModeToggle /> */}
       </Container>
     </Navbar>
   );

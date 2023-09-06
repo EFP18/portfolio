@@ -1,0 +1,70 @@
+.contactTitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+}
+
+.contactFormStyle {
+  border-radius: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.formFields {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.indivFields {
+  margin-top: 10px;
+  border-radius: 3px;
+  /* border: none; */
+}
+
+.expandable {
+  color: red;
+}
+
+.sendBtn {
+  margin-top: 20px !important;
+  background-color: #9ab07b;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+
+.sendBtn:hover {
+  background-color: rgb(134, 155, 134);
+}
+
+@media screen and (max-width: 1000px) {
+  .sendBtn {
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width: 775px) {
+  .contactFormStyle {
+    width: 80% !important;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .contactTitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-label {
+    font-size: 14px !important;
+  }
+}

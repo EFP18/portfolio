@@ -22,13 +22,17 @@ function Footer() {
       <ul style={{ listStyleType: 'none' }} className='ulFooter'>
         <li style={{ display: 'inline', marginRight: '20px' }}>
           {/* using logo images for the footer with link to the respective pages */}
-          <Link href='mailto:ester.p18@hotmail.com'>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='mailto:ester.p18@hotmail.com'
+          >
             <FontAwesomeIcon
               className='indIcons mailIcon'
               style={{ height: '50px' }}
               icon={faEnvelope}
             />
-          </Link>
+          </a>
         </li>
         <li style={{ display: 'inline', marginRight: '20px' }}>
           {/* using logo images for the footer with link to the respective pages */}
