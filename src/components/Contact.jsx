@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import '../styles/Contact.css';
 import emailjs from '@emailjs/browser';
+import { Button } from 'react-bootstrap';
 
 const ContactForm = () => {
   // const serviceId = process.env.SERVICE_ID;
@@ -60,7 +61,7 @@ const ContactForm = () => {
     <div
       className='container contactFormStyle'
       style={{
-        width: '60%',
+        // width: '60%',
         backgroundColor: 'rgba(255, 255, 255, 0.7)',
         border: 'none',
       }}
@@ -68,7 +69,13 @@ const ContactForm = () => {
       <h1
         id='contact'
         className='contactTitle'
-        style={{ marginLeft: '30px', marginBottom: '30px' }}
+        style={{
+          marginLeft: '30px',
+          marginTop: '30px',
+          marginBottom: '30px',
+          color: 'rgb(73, 97, 120)',
+          fontWeight: 'bold',
+        }}
       >
         Contact
       </h1>
@@ -156,9 +163,16 @@ const ContactForm = () => {
           className='col-12'
           style={{ display: 'flex', justifyContent: 'space-around' }}
         >
-          <button disabled={disabled} type='submit' className='sendBtn'>
-            <span>{buttonState}</span>
-          </button>
+          <Button disabled={disabled} type='submit' className='sendBtn'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              className='buttonText'
+              style={{ width: 'auto' }}
+            >
+              {buttonState}
+            </a>
+          </Button>
         </div>
         <div className='col-12 form-message'>
           <span

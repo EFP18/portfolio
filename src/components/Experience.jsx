@@ -17,7 +17,13 @@ const Experience = () => {
   return (
     <Container>
       <h1
-        style={{ marginLeft: '30px', marginBottom: '25px', marginTop: '-20px' }}
+        style={{
+          marginLeft: '30px',
+          marginBottom: '30px',
+          // marginTop: '-20px',
+          color: 'rgb(73, 97, 120)',
+          fontWeight: 'bold',
+        }}
         id='experience'
         className='experienceTitle'
       >

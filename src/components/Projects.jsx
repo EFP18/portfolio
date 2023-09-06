@@ -42,7 +42,12 @@ function Projects() {
       <h1
         id='projects'
         className='projectsTitle'
-        style={{ marginLeft: '30px', marginBottom: '30px' }}
+        style={{
+          marginLeft: '30px',
+          marginBottom: '30px',
+          color: 'rgb(73, 97, 120)',
+          fontWeight: 'bold',
+        }}
       >
         Projects
       </h1>

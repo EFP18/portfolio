@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { DarkModeToggle } from './DarkMode';
+import logo from '../components/images/logoEFP.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,15 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand href='#home' className='name'>
+          <img
+            alt='logo EFP'
+            src={logo}
+            style={{
+              height: '40px',
+              borderRadius: '25px',
+              marginRight: '20px',
+            }}
+          />
           Ester Pelosof
         </Navbar.Brand>
         <Navbar.Toggle
@@ -36,7 +46,7 @@ const Navigation = () => {
             <Nav.Link href='#projects' onClick={handleNavClickToggle}>
               Projects
             </Nav.Link>
-            <Nav.Link href='#cactont' onClick={handleNavClickToggle}>
+            <Nav.Link href='#contact' onClick={handleNavClickToggle}>
               Contact
             </Nav.Link>
           </Nav>

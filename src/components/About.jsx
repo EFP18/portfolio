@@ -5,19 +5,28 @@ import Card from 'react-bootstrap/Card';
 import '../styles/About.css';
 
 const About = () => {
-
-  
   return (
     <Container className='mb-5 mt-4'>
       <h1
         id='about'
         className='aboutTitle'
-        style={{ marginLeft: '30px', marginBottom: '30px', marginTop: '30px' }}
+        style={{
+          marginLeft: '30px',
+          marginBottom: '30px',
+          marginTop: '30px',
+          color: 'rgb(73, 97, 120)',
+          fontWeight: 'bold',
+        }}
       >
         About
       </h1>
       <Row>
-        <Col xs={12} md={4} lg={3} className='d-flex align-items-center justify-content-center'>
+        <Col
+          xs={12}
+          md={4}
+          lg={3}
+          className='d-flex align-items-center justify-content-center'
+        >
           <Image
             src={headshot}
             roundedCircle

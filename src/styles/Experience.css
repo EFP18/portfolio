@@ -31,6 +31,8 @@ h2 {
   border-radius: 12px !important;
   align-content: space-around;
   /* width: fit-content !important; */
+  width: 200px !important;
+  margin: auto;
 }
 
 .resumeBtn:hover {

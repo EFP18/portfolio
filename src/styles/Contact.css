@@ -31,18 +31,22 @@
 }
 
 .sendBtn {
-  margin-top: 20px !important;
-  background-color: #9ab07b;
-  color: black;
-  border-radius: 5px;
-  padding: 5px 15px 5px 15px;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
+  margin-top: 30px !important;
+  margin-bottom: 30px;
+  background-color: rgb(73, 97, 120) !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 12px !important;
+  align-content: space-around;
+  /* width: fit-content !important; */
+  width: 200px !important;
+  margin: auto;
+  color: rgb(221, 209, 209);
 }
 
 .sendBtn:hover {
-  background-color: rgb(134, 155, 134);
+  background-color: #658ebd !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -50,12 +54,6 @@
     font-size: 14px;
   }
 }
-
-/* @media screen and (max-width: 775px) {
-  .contactFormStyle {
-    width: 80% !important;
-  }
-} */
 
 @media screen and (max-width: 767px) {
   .contactTitle {
