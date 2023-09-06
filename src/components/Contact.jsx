@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import '../styles/Contact.css';
 import emailjs from '@emailjs/browser';
-import { Button } from 'react-bootstrap';
+import { Card, Row, Col, Button } from 'react-bootstrap';
 
 const ContactForm = () => {
   // const serviceId = process.env.SERVICE_ID;
@@ -79,108 +79,142 @@ const ContactForm = () => {
       >
         Contact
       </h1>
-      <form className='formFields' onSubmit={formik.handleSubmit}>
-        {/* <div className='col-12 col-md-4 firstCol'> */}
-        <label htmlFor='from_name' />
-        <input
-          id='from_name'
-          name='from_name'
-          type='text'
-          autoComplete='off'
-          placeholder='Full Name'
-          onChange={formik.handleChange}
-          value={formik.values.from_name}
-          className='indivFields'
-        />
-        <div
-          className={`expandable ${
-            formik.touched.from_name && formik.errors.from_name ? 'show' : ''
-          }`}
-        >
-          {formik.errors.from_name}
-          {/* </div> */}
-        </div>
-        {/* <div className='col-12 col-md-4 firstCol'> */}
-        <label htmlFor='subject' />
-        <input
-          id='subject'
-          name='subject'
-          type='text'
-          autoComplete='off'
-          placeholder='Phone Number'
-          onChange={formik.handleChange}
-          value={formik.values.subject}
-          className='indivFields'
-        />
-        <div
-          className={`expandable ${
-            formik.touched.subject && formik.errors.subject ? 'show' : ''
-          }`}
-        >
-          {formik.errors.subject}
-          {/* </div> */}
-        </div>
-        {/* <div className='col-12 col-md-4 firstCol'> */}
-        <label htmlFor='reply_to' />
-        <input
-          id='reply_to'
-          type='email'
-          name='reply_to'
-          placeholder='Email Address'
-          autoComplete='off'
-          onChange={formik.handleChange}
-          value={formik.values.reply_to}
-          className='indivFields'
-        />
-        <div
-          className={`expandable ${
-            formik.touched.reply_to && formik.errors.reply_to ? 'show' : ''
-          }`}
-        >
-          {formik.errors.reply_to}
-          {/* </div> */}
-        </div>{' '}
-        {/* <div className='col-12 messageCol'> */}
-        <label htmlFor='message' />
-        <textarea
-          id='message'
-          name='message'
-          placeholder='Message'
-          autoComplete='off'
-          onChange={formik.handleChange}
-          value={formik.values.message}
-          className='indivFields'
-        />
-        <div
-          className={`expandable ${
-            formik.touched.message && formik.errors.message ? 'show' : ''
-          }`}
-        >
-          {formik.errors.message}
-        </div>
-        {/* </div> */}
-        <div
-          className='col-12'
-          style={{ display: 'flex', justifyContent: 'space-around' }}
-        >
-          <Button disabled={disabled} type='submit' className='sendBtn'>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              className='buttonText'
-              style={{ width: 'auto' }}
-            >
-              {buttonState}
-            </a>
-          </Button>
-        </div>
-        <div className='col-12 form-message'>
-          <span
-            id='output'
-            className='output_message text-center text-uppercase'
-          />
-        </div>
-      </form>
+      <Row>
+        <Col >
+          <Card className='contactForm'>
+            <form className='formFields' onSubmit={formik.handleSubmit}>
+              {/* <div className='col-12 col-md-4 firstCol'> */}
+              <label htmlFor='from_name' />
+              <input
+                id='from_name'
+                name='from_name'
+                type='text'
+                autoComplete='off'
+                placeholder='Full Name'
+                onChange={formik.handleChange}
+                value={formik.values.from_name}
+                className='indivFields'
+              />
+              <div
+                className={`expandable ${
+                  formik.touched.from_name && formik.errors.from_name
+                    ? 'show'
+                    : ''
+                }`}
+              >
+                {formik.errors.from_name}
+                {/* </div> */}
+              </div>
+              {/* <div className='col-12 col-md-4 firstCol'> */}
+              <label htmlFor='subject' />
+              <input
+                id='subject'
+                name='subject'
+                type='text'
+                autoComplete='off'
+                placeholder='Phone Number'
+                onChange={formik.handleChange}
+                value={formik.values.subject}
+                className='indivFields'
+              />
+              <div
+                className={`expandable ${
+                  formik.touched.subject && formik.errors.subject ? 'show' : ''
+                }`}
+              >
+                {formik.errors.subject}
+                {/* </div> */}
+              </div>
+              {/* <div className='col-12 col-md-4 firstCol'> */}
+              <label htmlFor='reply_to' />
+              <input
+                id='reply_to'
+                type='email'
+                name='reply_to'
+                placeholder='Email Address'
+                autoComplete='off'
+                onChange={formik.handleChange}
+                value={formik.values.reply_to}
+                className='indivFields'
+              />
+              <div
+                className={`expandable ${
+                  formik.touched.reply_to && formik.errors.reply_to
+                    ? 'show'
+                    : ''
+                }`}
+              >
+                {formik.errors.reply_to}
+                {/* </div> */}
+              </div>{' '}
+              {/* <div className='col-12 messageCol'> */}
+              <label htmlFor='message' />
+              <textarea
+                id='message'
+                name='message'
+                placeholder='Message'
+                autoComplete='off'
+                onChange={formik.handleChange}
+                value={formik.values.message}
+                className='indivFields'
+              />
+              <div
+                className={`expandable ${
+                  formik.touched.message && formik.errors.message ? 'show' : ''
+                }`}
+              >
+                {formik.errors.message}
+              </div>
+              {/* </div> */}
+              <div
+                className='col-12'
+                style={{ display: 'flex', justifyContent: 'space-around' }}
+              >
+                <Button disabled={disabled} type='submit' className='sendBtn'>
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    className='buttonText'
+                    style={{ width: 'auto' }}
+                  >
+                    {buttonState}
+                  </a>
+                </Button>
+              </div>
+              <div className='col-12 form-message'>
+                <span
+                  id='output'
+                  className='output_message text-center text-uppercase'
+                />
+              </div>
+            </form>
+          </Card>
+        </Col>
+        {/* <Col lg={4} md={6} s={10} xs={12}>
+          <Card style={{ margin: '10px 10px 10px 10px' }}>
+            <div className='container'>
+              <h3>Ester Pelosof</h3>
+              <div className='cardFields'>
+                <h5>LOCATION:</h5>
+                <p>Nashville, TN</p>
+              </div>
+              <div className='cardFields'>
+                <h5>FREELANCE:</h5>
+                <p>Available</p>
+              </div>
+              <div className='cardFields'>
+                <h5>EMAIL:</h5>
+                <p>
+                  <a href='mailto:ester.p18@hotmail.com'>
+                    {' '}
+                    ester.p18@hotmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </Card>
+        </Col> */}
+      </Row>
     </div>
   );
 };
