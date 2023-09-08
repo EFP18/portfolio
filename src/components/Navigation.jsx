@@ -12,6 +12,27 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+  // make sure that the title of each section shows on scroll
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      // Get the navbar height
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const offset = navbarHeight + 20;
+
+      const sectionPosition =
+        section.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth',
+      });
+
+      handleNavClickToggle();
+    }
+  };
+
   return (
     <Navbar
       expand='lg'
@@ -36,17 +57,21 @@ const Navigation = () => {
           onClick={() => setIsOpen(!isOpen)}
         />
         <Navbar.Collapse id='basic-navbar-nav' style={{ flexGrow: '0' }}>
-          <Nav className='me-auto navItems'>
-            <Nav.Link href='#about' onClick={handleNavClickToggle}>
-              About
+          <Nav
+            className='me-auto navItems'
+            style={{ color: 'rgb(73, 97, 120)', fontWeight: 'bold' }}
+          >
+            <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection('experience')}>
+              Skills
             </Nav.Link>
-            <Nav.Link href='#experience' onClick={handleNavClickToggle}>
-              Experience
+            <Nav.Link onClick={() => scrollToSection('workExp')}>
+              Work Experience
             </Nav.Link>
-            <Nav.Link href='#projects' onClick={handleNavClickToggle}>
+            <Nav.Link onClick={() => scrollToSection('projects')}>
               Projects
             </Nav.Link>
-            <Nav.Link href='#contact' onClick={handleNavClickToggle}>
+            <Nav.Link onClick={() => scrollToSection('contact')}>
               Contact
             </Nav.Link>
           </Nav>

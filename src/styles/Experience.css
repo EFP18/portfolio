@@ -5,7 +5,7 @@
 }
 
 .experienceTitle {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 30px;
 }
 
@@ -106,7 +106,6 @@ h2 {
     font-size: 16px !important;
   }
 }
-
 .icons {
   display: flex;
   flex-wrap: wrap;

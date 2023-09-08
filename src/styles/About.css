@@ -11,6 +11,7 @@
 .headshot {
   margin-left: 20px;
 }
+
 @media screen and (max-width: 767px) {
   .aboutTitle {
     font-size: 25px;
@@ -24,4 +25,3 @@
     margin-left: 0px !important;
   }
 }
-

@@ -2,3 +2,13 @@
   background-color: rgb(49, 58, 69);
   color: whitesmoke;
 } */
+
+@media screen and (max-width: 750px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    /* margin: auto !important;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important; */
+  }
+}

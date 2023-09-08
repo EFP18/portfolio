@@ -20,7 +20,7 @@ const Experience = () => {
         style={{
           marginLeft: '30px',
           marginBottom: '30px',
-          // marginTop: '-20px',
+          marginTop: '30px',
           color: 'rgb(73, 97, 120)',
           fontWeight: 'bold',
         }}

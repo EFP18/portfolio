@@ -37,7 +37,7 @@ const About = () => {
           />
         </Col>
         <Col xs={12} md={8} lg={8}>
-          <Zoom>
+          <Zoom triggerOnce>
             <Card
               body
               className='border-0 aboutMe'

@@ -11,3 +11,16 @@
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
 }
+
+@media screen and (max-width: 1000px) {
+  .sendBtn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .workExpTitle {
+    font-size: 25px;
+  }
+}
+

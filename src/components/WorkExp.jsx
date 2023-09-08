@@ -8,7 +8,7 @@ const WorkExp = () => {
   return (
     <Container className='mb-5 mt-4'>
       <h1
-        id='about'
+        id='workExp'
         className='workExpTitle'
         style={{
           marginLeft: '30px',
