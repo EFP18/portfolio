@@ -3,7 +3,7 @@
   color: whitesmoke;
 } */
 
-.App{
+.App {
   position: relative;
   overflow: hidden;
 }
@@ -20,6 +20,7 @@
   height: 100%;
   z-index: -1;
   background-position: center;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 750px) {
