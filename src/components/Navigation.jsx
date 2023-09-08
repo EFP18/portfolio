@@ -16,21 +16,21 @@ const Navigation = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
 
-    if (section) {
-      // Get the navbar height
-      const navbarHeight = document.querySelector('.navbar').offsetHeight;
-      const offset = navbarHeight + 20;
+    // Get the navbar height
+    const navbar = document.querySelector('.navbar');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
-      const sectionPosition =
-        section.getBoundingClientRect().top + window.pageYOffset - offset;
+    const offset = navbarHeight;
 
-      window.scrollTo({
-        top: sectionPosition,
-        behavior: 'smooth',
-      });
+    const sectionPosition =
+      section.getBoundingClientRect().top + window.pageYOffset - offset;
 
-      handleNavClickToggle();
-    }
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth',
+    });
+
+    handleNavClickToggle();
   };
 
   return (

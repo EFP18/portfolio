@@ -20,20 +20,20 @@ const Experience = () => {
         style={{
           marginLeft: '30px',
           marginBottom: '30px',
-          // marginTop: '-20px',
+          marginTop: '30px',
           color: 'rgb(73, 97, 120)',
           fontWeight: 'bold',
         }}
         id='experience'
         className='experienceTitle'
       >
-        Experience
+        Skills
       </h1>
       <Row style={{ marginBottom: '50px' }}>
         <Col xs={12} md={6} lg={6}>
-          <h2 className='titles' style={{ marginBottom: '30px' }}>
+          {/* <h2 className='titles' style={{ marginBottom: '30px' }}>
             Skills
-          </h2>
+          </h2> */}
           <div className='icons'>
             <Bounce>
               <img src={mysqlIcon} alt='mysqlIcon' className='indivIcons' />
