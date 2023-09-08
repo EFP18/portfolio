@@ -3,6 +3,25 @@
   color: whitesmoke;
 } */
 
+.App{
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+}
+
 @media screen and (max-width: 750px) {
   h1 {
     display: flex;

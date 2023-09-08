@@ -20,7 +20,7 @@ const Experience = () => {
         style={{
           marginLeft: '30px',
           marginBottom: '30px',
-          marginTop: '30px',
+          // marginTop: '-20px',
           color: 'rgb(73, 97, 120)',
           fontWeight: 'bold',
         }}
@@ -43,7 +43,7 @@ const Experience = () => {
                 src={javascriptIcon}
                 alt='javascriptIcon'
                 className='indivIcons'
-              />{' '}
+              />
             </Bounce>
             <Bounce>
               <img src={nodeIcon} alt='nodeIcon' className='indivIcons' />
@@ -102,7 +102,13 @@ const Experience = () => {
           Education
         </h2>
         <Zoom triggerOnce>
-          <Card className='shadow-lg p-3 mb-4 bg-white rounded-5'>
+          <Card
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.5)',
+              border: 'none',
+            }}
+            className='shadow-lg p-3 mb-4 rounded-5'
+          >
             <Card.Body>
               <Card.Title className='educationTitle'>
                 Full Stack Web Development
@@ -114,7 +120,14 @@ const Experience = () => {
           </Card>
         </Zoom>
         <Zoom triggerOnce>
-          <Card className='shadow-lg p-3 mb-5 bg-white rounded-5'>
+          <Card
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.5)',
+              border: 'none',
+            }}
+            className='shadow-lg p-3 mb-4 rounded-5'
+          >
+            {' '}
             <Card.Body>
               <Card.Title className='educationTitle'>
                 European Languages and Cultures

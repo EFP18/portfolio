@@ -21,7 +21,14 @@ const WorkExp = () => {
         Work Experience
       </h1>
       {/* <div class='card mb-3'> */}
-      <Card className='cardDendro'>
+      <Card
+        className='cardDendro shadow-lg'
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.5',
+          border: 'none',
+          borderRadius: '40px',
+        }}
+      >
         <div class='row no-gutters'>
           <div class='col-md-4'>
             <Link to='//www.dendrotreecare.com'>

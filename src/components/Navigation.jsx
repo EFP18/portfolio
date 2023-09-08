@@ -36,8 +36,9 @@ const Navigation = () => {
   return (
     <Navbar
       expand='lg'
-      className='bg-body-tertiary sticky-top'
+      className=' sticky-top'
       expanded={isOpen}
+      style={{ backgroundColor: 'rgb(255, 255, 255, 0.3)' }}
     >
       <Container>
         <Navbar.Brand href='#home' className='name'>
@@ -57,10 +58,7 @@ const Navigation = () => {
           onClick={() => setIsOpen(!isOpen)}
         />
         <Navbar.Collapse id='basic-navbar-nav' style={{ flexGrow: '0' }}>
-          <Nav
-            className='me-auto navItems'
-            style={{ color: 'rgb(73, 97, 120)', fontWeight: 'bold' }}
-          >
+          <Nav className='me-auto navItems' style={{ fontWeight: 'bold' }}>
             <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
             <Nav.Link onClick={() => scrollToSection('experience')}>
               Skills

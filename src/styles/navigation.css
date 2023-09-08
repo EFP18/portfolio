@@ -8,6 +8,10 @@
   font-size: 25px;
 }
 
+.navItems a {
+  color: rgb(73, 97, 120) !important;
+}
+
 .navItems a:hover {
   color: rgb(149, 149, 208);
   font-weight: bolder;
@@ -22,7 +26,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px; /* height of sticky header */
 }
-
 
 /* responsiveness for navbar */
 @media screen and (max-width: 991px) {

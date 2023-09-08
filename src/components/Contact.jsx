@@ -62,7 +62,7 @@ const ContactForm = () => {
       className='container contactFormStyle'
       style={{
         // width: '60%',
-        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        // backgroundColor: 'rgba(255, 255, 255, 0.7)',
         border: 'none',
       }}
     >
@@ -80,8 +80,14 @@ const ContactForm = () => {
         Contact
       </h1>
       <Row>
-        <Col >
-          <Card className='contactForm'>
+        <Col>
+          <Card
+            className='contactForm rounded-5 shadow-lg'
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.5)',
+              border: 'none',
+            }}
+          >
             <form className='formFields' onSubmit={formik.handleSubmit}>
               {/* <div className='col-12 col-md-4 firstCol'> */}
               <label htmlFor='from_name' />

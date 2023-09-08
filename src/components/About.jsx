@@ -40,25 +40,23 @@ const About = () => {
           <Zoom triggerOnce>
             <Card
               body
-              className='border-0 aboutMe'
-              style={{ fontSize: '1.2rem' }}
+              className='border-0 aboutMe shadow-lg rounded-5'
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
             >
-              Linguist turned coder! I have always loved studying different
-              languages, and I find the creation of different structures and
-              sentences very interesting, which is why I decided to study
-              programming languages and coding. Prior to that, I studied
-              Linguistics at the University of Groningen in the Netherlands, and
-              worked in translations for several years.
-            </Card>
-            <Card
-              body
-              className='border-0 aboutMe'
-              style={{ fontSize: '1.2rem' }}
-            >
-              Back in 2022 I created a website using Google Sites. Seeing the
-              final product after all the hard work gave me a sense of
-              fulfillment, so I took the next step towards becoming a Full Stack
-              Web Developer.
+              <p>
+                Linguist turned coder! I have always loved studying different
+                languages, and I find the creation of different structures and
+                sentences very interesting, which is why I decided to study
+                programming languages and coding. Prior to that, I studied
+                Linguistics at the University of Groningen in the Netherlands,
+                and worked in translations for several years.
+              </p>
+              <p>
+                Back in 2022 I created a website using Google Sites. Seeing the
+                final product after all the hard work gave me a sense of
+                fulfillment, so I took the next step towards becoming a Full
+                Stack Web Developer.
+              </p>
             </Card>
           </Zoom>
         </Col>
