@@ -8,6 +8,7 @@ import cssIcon from './images/icons8-css-96.png';
 import handlebarIcon from './images/icons8-handlebar-96.png';
 import htmlIcon from './images/icons8-html-96.png';
 import mongoIcon from './images/icons8-mongodb-96.png';
+import pythonIcon from './images/icons8-python-96.png';
 import resume from './images/resume.pdf';
 import '../styles/Experience.css';
 import { Zoom } from 'react-awesome-reveal';
@@ -44,6 +45,9 @@ const Experience = () => {
                 alt='javascriptIcon'
                 className='indivIcons'
               />
+            </Bounce>
+            <Bounce>
+              <img src={pythonIcon} alt='pythonIcon' className='indivIcons' />
             </Bounce>
             <Bounce>
               <img src={nodeIcon} alt='nodeIcon' className='indivIcons' />
@@ -115,6 +119,24 @@ const Experience = () => {
               </Card.Title>
               <Card.Text className='educationTimeline'>
                 Vanderbilt, 2023
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Zoom>
+        <Zoom triggerOnce>
+          <Card
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.5)',
+              border: 'none',
+            }}
+            className='shadow-lg p-3 mb-4 rounded-5'
+          >
+            <Card.Body>
+              <Card.Title className='educationTitle'>
+                Programming in Python for Non-Programmers
+              </Card.Title>
+              <Card.Text className='educationTimeline'>
+                ColMooc, Aristotle University of Thessaloniki, 2020
               </Card.Text>
             </Card.Body>
           </Card>
