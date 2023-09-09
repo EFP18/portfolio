@@ -10,6 +10,17 @@
 
 .headshot {
   margin-left: 20px;
+  /* padding: 50px; */
+  transition: transform .2s;
+  /* width: 200px;
+  height: 200px; */
+  /* margin: 0 auto; */
+}
+
+.headshot:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 
 @media screen and (max-width: 767px) {
@@ -23,5 +34,7 @@
     height: 150px !important;
     margin-top: 0px !important;
     margin-left: 0px !important;
+    margin-bottom: 30px !important;
+
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import headshot from './images/headshotPortfolio.png';
+import headshot from './images/headshotEFP.jpg';
 import Card from 'react-bootstrap/Card';
 import '../styles/About.css';
 import { Zoom } from 'react-awesome-reveal';
