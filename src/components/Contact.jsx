@@ -196,30 +196,6 @@ const ContactForm = () => {
             </form>
           </Card>
         </Col>
-        {/* <Col lg={4} md={6} s={10} xs={12}>
-          <Card style={{ margin: '10px 10px 10px 10px' }}>
-            <div className='container'>
-              <h3>Ester Pelosof</h3>
-              <div className='cardFields'>
-                <h5>LOCATION:</h5>
-                <p>Nashville, TN</p>
-              </div>
-              <div className='cardFields'>
-                <h5>FREELANCE:</h5>
-                <p>Available</p>
-              </div>
-              <div className='cardFields'>
-                <h5>EMAIL:</h5>
-                <p>
-                  <a href='mailto:ester.p18@hotmail.com'>
-                    {' '}
-                    ester.p18@hotmail.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </Card>
-        </Col> */}
       </Row>
     </div>
   );

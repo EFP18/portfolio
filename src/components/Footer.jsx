@@ -25,7 +25,7 @@ function Footer() {
           <a
             target='_blank'
             rel='noreferrer'
-            href='mailto:ester.p18@hotmail.com'
+            href='mailto:e.pelosof18@gmail.com'
           >
             <FontAwesomeIcon
               className='indIcons mailIcon'
