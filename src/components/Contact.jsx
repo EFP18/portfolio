@@ -177,14 +177,14 @@ const ContactForm = () => {
                 style={{ display: 'flex', justifyContent: 'space-around' }}
               >
                 <Button disabled={disabled} type='submit' className='sendBtn'>
-                  <a
+                  <span
                     target='_blank'
                     rel='noreferrer'
                     className='buttonText'
                     style={{ width: 'auto' }}
                   >
                     {buttonState}
-                  </a>
+                  </span>
                 </Button>
               </div>
               <div className='col-12 form-message'>
